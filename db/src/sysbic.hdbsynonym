@@ -1,0 +1,8 @@
+{
+  "H2O_FLOWMETER_DATA_METRICS_SYNONYM": {
+    "target": {
+      "object": "H2O/H2O_FLOWMETER_DATA_METRICS",
+      "schema": "_SYS_BIC"
+    }
+  }
+}

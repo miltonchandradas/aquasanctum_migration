@@ -1,0 +1,17 @@
+using {
+    H2O_FLOWMETER_DATA_METRICS,
+    H2O_FLOWMETERS,
+    H2O_CON_FLOWMETERS,
+    H2O_TECHNICIANS
+
+} from '../db/schema.cds';
+
+service AquaService {
+
+    @readonly
+    entity H2OFlowmeterData as SELECT FROM H2O_FLOWMETER_DATA_METRICS;
+
+    entity FLOWMETERS as SELECT FROM H2O_FLOWMETERS;
+    entity CON_FLOWMETERS as SELECT FROM H2O_CON_FLOWMETERS;
+    entity TECHNICIANS as SELECT FROM H2O_TECHNICIANS;
+}
